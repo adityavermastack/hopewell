@@ -1,52 +1,39 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Hopewell Girls Hostel</title>
-  <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;600&display=swap" rel="stylesheet">
+<div style="text-align: center; padding: 5px; font-size: 15px;  
+  margin: 2px 0;">
+  <p style="color: rgb(24, 24, 77);">
+    📌 Some useful links are available at the bottom of the page. Scroll down to find them!
+  </p>
+</div>
+
+<div style="text-align: center;">
+  <img class="responsive-img" style="width: 35%; height:auto;" src="images/Logo.jpeg">
+</div>
+
+<h1 style="font-size: 35px; text-align: center; color: rgb(24, 24, 77);">
+  More than a hostel — it's home.
+</h1>
+
+<p style="font-size:20px; text-align:center; line-height: 22px; margin-bottom: 16px;">
+  <span style="background-color: rgb(71, 148, 212); color: white; padding: 10px 15px; border-radius: 8px; display: inline-block;">
+  It's a space where bonds are built, stories are shared,<br>
+  and every day feels like a step forward.
+  </span>
+  
+<br><br>
+  <b>more than just a place to stay!</b>
+</p>
+
+<hr style="width: 65%;"><br>
+
+<div style="text-align: center; margin-top: 20px;">
   <style>
-    body {
-      font-family: 'Urbanist', sans-serif;
-      margin: 0;
-      padding: 0;
-    }
-
-    h1 {
-      font-size: 32px;
-      text-align: center;
-      color: rgb(24, 24, 77);
-      margin: 20px 10px;
-    }
-
-    p {
-      font-size: 18px;
-      text-align: center;
-      margin: 0 10px 20px;
-      line-height: 1.5;
-    }
-
-    img.responsive {
-      width: 100%;
-      height: auto;
-      max-width: 100%;
-      display: block;
-      margin: 10px auto;
-    }
-
-    .button-container {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 10px;
-      padding: 10px;
-    }
+    @import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@400;600&display=swap');
 
     .pretty-button {
-      font-size: 16px;
+      font-size: 18px;
       background-color: rgb(19, 45, 67);
       color: #ffffff;
-      padding: 10px 20px;
+      padding: 12px 28px;
       margin: 10px;
       text-decoration: none;
       border-radius: 8px;
@@ -55,9 +42,6 @@
       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
       font-family: 'Urbanist', sans-serif;
       letter-spacing: 0.5px;
-      width: calc(100% / 2.5);
-      min-width: 120px;
-      box-sizing: border-box;
     }
 
     .pretty-button:hover {
@@ -66,168 +50,206 @@
       transform: translateY(-2px);
     }
 
-    @media (max-width: 600px) {
+    .responsive-img {
+      width: 35%;
+      height: auto;
+    }
+
+    @media (max-width: 768px) {
+      .responsive-img {
+        width: 90% !important;
+        height: auto !important;
+        margin-bottom: 10px;
+      }
+
       h1 {
-        font-size: 24px;
+        font-size: 26px !important;
+      }
+
+      p {
+        font-size: 16px !important;
+        padding: 0 10px;
       }
 
       .pretty-button {
-        width: 100%;
         font-size: 16px;
-      }
-
-      img.responsive {
+        padding: 10px 20px;
+        margin: 6px;
         width: 90%;
+        box-sizing: border-box;
       }
 
-      .facilities-section ul {
-        padding-left: 20px;
-        font-size: 16px;
+      footer div[style*="display: flex"] {
+        flex-direction: column !important;
+        gap: 20px !important;
+        align-items: center !important;
+        text-align: center !important;
+      }
+
+      #facilities-section {
+        padding: 10px !important;
+      }
+
+      img[style*="width: 33%"] {
+        width: 90% !important;
+        height: auto !important;
+        display: block;
+        margin: 10px auto;
+      }
+
+      ul {
+        padding-left: 20px !important;
+      }
+
+      li {
+        font-size: 16px !important;
+        line-height: 1.6 !important;
       }
 
       footer {
-        padding: 20px;
+        padding: 20px !important;
       }
 
-      footer div {
-        flex-direction: column;
-        align-items: center;
-        gap: 20px;
-      }
-
-      footer h4,
-      footer p {
-        text-align: center;
-      }
-
-      #termsModal > div,
-      #contactModal > div {
-        width: 90%;
-        max-width: 500px;
+      footer h4, footer p, footer li {
+        font-size: 16px !important;
       }
     }
   </style>
-</head>
-<body>
-  <div style="text-align: center; padding: 5px; font-size: 15px; margin: 2px 0;">
-    <p style="color: rgb(24, 24, 77);">
-      📌 Some useful links are available at the bottom of the page. Scroll down to find them!
+
+  <a class="pretty-button" href="details.html">More Details</a>
+  <a class="pretty-button" href="tel:+917321924242">Connect with Us</a>
+  <a class="pretty-button" href="https://maps.app.goo.gl/6GPenLa2962TCG8A8" target="_blank">Address</a>
+  <a class="pretty-button" onclick="toggleFacilities()">Facilities</a>
+  <a class="pretty-button" href="fees.html">Fee Details</a>
+  <a class="pretty-button" href="enquire.html">Enquire</a>
+</div>
+
+<div id="facilities-section" style="margin: 60px auto; max-width: 800px; padding: 20px; border-top: 2px solid #ccc; display: none;">
+  <h2 style="text-align: center; color: rgb(24, 24, 77); font-size: 30px;">Facilities Offered</h2>
+  <ul style="font-size: 18px; line-height: 2; padding-left: 40px;">
+    <li>✔️ 24x7 Water Supply</li>
+    <li>✔️ High-Speed WiFi Access</li>
+    <li>✔️ Shared Refrigerator Facility</li>
+    <li>✔️ Hot Water Geysers in Bathrooms</li>
+    <li>✔️ CCTV Surveillance and Security</li>
+    <li>✔️ Rooftop Access</li>
+  </ul>
+</div>
+
+
+
+<br><br>
+
+<img style="width: 33%; height:66%;" src="Image01.jpeg">
+<img style="width: 33%; height:66%;" src="Image02.png">
+<img style="width: 33%; height:66%;" src="Image03.jpeg">
+<br>
+<img style="width: 33%; height:66%;" src="Image04.png">
+<img style="width: 33%; height:66%;" src="Image05.jpeg">
+<img style="width: 33%; height:66%;" src="Image06.png">
+
+<footer style="background-color: #ffffff; padding: 40px; font-family: sans-serif;">
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 40px; max-width: 1200px; margin: auto;">
+  
+  <div style="flex: 1; min-width: 200px;">
+    <h4>Message</h4>
+    <p>We ensure your stay is not just convenient, but truly enriching.
+      <br>Come be a part of a place where comfort meets care,<br>
+      and where every day feels just like home.
     </p>
   </div>
 
-  <div style="text-align: center;">
-    <img class="responsive" src="Logo.jpeg" alt="Logo">
-  </div>
+  <!-- Useful Links -->
+  <div style="flex: 1; text-align: center; min-width: 150px;">
+    <h4>USEFUL LINKS</h4>
+    <ul style="list-style: none; text-align: center; padding: 0;">
+      <li><a href="#" onclick="showTerms()">Terms of Service</a></li>
+      <li><a href="#" onclick="showContact()">Contact Information</a></li>
+      
 
-  <h1>More than a hostel — it's home.</h1>
-
-  <p>
-    <span style="background-color: rgb(71, 148, 212); color: white; padding: 10px 15px; border-radius: 8px; display: inline-block;">
-      It's a space where bonds are built, stories are shared,<br>
-      and every day feels like a step forward.
-    </span>
-    <br><br><b>more than just a place to stay!</b>
-  </p>
-
-  <hr style="width: 65%;"><br>
-
-  <div class="button-container">
-    <a class="pretty-button" href="details.html">More Details</a>
-    <a class="pretty-button" href="tel:+917321924242">Connect with Us</a>
-    <a class="pretty-button" href="https://maps.app.goo.gl/6GPenLa2962TCG8A8" target="_blank">Address</a>
-    <a class="pretty-button" onclick="toggleFacilities()">Facilities</a>
-    <a class="pretty-button" href="fees.html">Fee Details</a>
-    <a class="pretty-button" href="enquire.html">Enquire</a>
-  </div>
-
-  <div id="facilities-section" class="facilities-section" style="margin: 60px auto; max-width: 800px; padding: 20px; border-top: 2px solid #ccc; display: none;">
-    <h2 style="text-align: center; color: rgb(24, 24, 77); font-size: 30px;">Facilities Offered</h2>
-    <ul style="font-size: 18px; line-height: 2; padding-left: 40px;">
-      <li>✔️ 24x7 Water Supply</li>
-      <li>✔️ High-Speed WiFi Access</li>
-      <li>✔️ Shared Refrigerator Facility</li>
-      <li>✔️ Hot Water Geysers in Bathrooms</li>
-      <li>✔️ CCTV Surveillance and Security</li>
-      <li>✔️ Rooftop Access</li>
     </ul>
   </div>
+</div>
 
-  <br><br>
+<!-- Terms of Service Modal -->
+<div id="termsModal" style="display:none; position: fixed; z-index: 9999; left: 0; top: 0; width: 100%; height: 100%; overflow: auto; background-color: rgba(0,0,0,0.6);">
+  <div style="background-color: #fff; margin: 5% auto; padding: 20px; border-radius: 10px; width: 60%; max-height: 80%; overflow-y: auto; position: relative;">
+    
+    <span onclick="document.getElementById('termsModal').style.display='none'" 
+    style="position: absolute; top: 10px; right: 20px; font-size: 28px; font-weight: bold; cursor: pointer;">&times;</span>
 
-  <img class="responsive" src="Image01.jpeg">
-  <img class="responsive" src="Image02.png">
-  <img class="responsive" src="Image03.jpeg">
-  <br>
-  <img class="responsive" src="Image04.png">
-  <img class="responsive" src="Image05.jpeg">
-  <img class="responsive" src="Image06.png">
+    <h2 style="color: rgb(24, 24, 77);">Terms of Service</h2>
+    <p style="line-height: 1.6; font-size: 16px;">
+    1. All residents must return to the hostel premises by 9:00 PM unless prior permission has been granted.<br><br>
+    2. Visitors are allowed only during designated hours; male visitors are restricted to common visitor areas<br>
+     and cannot enter resident rooms.<br><br>
+    3. Unauthorized visitors or overnight guests are strictly prohibited.<br><br>
+    4. Rent must be paid on time; late fees apply after the due date.<br><br>
+    5. Any form of fight, argument, bullying, or physical/verbal abuse will result in strict disciplinary action,<br>
+     including possible suspension or expulsion.<br><br>
+    6. Unauthorized electrical appliances are not permitted in rooms to ensure safety and avoid electrical hazards.<br><br>
+    7. Hostel authorities reserve the right to conduct surprise room inspections for safety and maintenance purposes.<br><br>
+    8. Outstation or overnight leave must be pre-approved by hostel authorities with guardian consent if required.<br><br>
+    9. Theft, damage to property, or tampering with hostel infrastructure will result in penalties or legal consequences.<br><br>
+    10. All residents must treat staff and fellow hostel mates with respect and refrain from inappropriate or disrespectful behavior.<br><br>
+    By staying with us, you agree to abide by all the rules above for a safe and comfortable experience.
+  </p>
+</div>
+</div>
 
-  <footer style="background-color: #ffffff; padding: 40px; font-family: sans-serif;">
-    <div style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 40px; max-width: 1200px; margin: auto;">
-      <div style="flex: 1; min-width: 200px;">
-        <h4>Message</h4>
-        <p>We ensure your stay is not just convenient, but truly enriching.<br>
-        Come be a part of a place where comfort meets care,<br>
-        and where every day feels just like home.</p>
-      </div>
-      <div style="flex: 1; text-align: center; min-width: 150px;">
-        <h4>USEFUL LINKS</h4>
-        <ul style="list-style: none; text-align: center; padding: 0;">
-          <li><a href="#" onclick="showTerms()">Terms of Service</a></li>
-          <li><a href="#" onclick="showContact()">Contact Information</a></li>
-        </ul>
-      </div>
-    </div>
+<!-- Contact Modal -->
+<div id="contactModal" style="display: none; position: fixed; top: 0; left: 0;
+  width: 100%; height: 100%; background-color: rgba(0,0,0,0.5); z-index: 999;">
+  
+  <div style="background-color: rgb(255, 255, 255); width: 300px; margin: 100px auto; padding: 20px;
+    border-radius: 8px; text-align: center; position: relative;">
 
-    <div id="termsModal" style="display:none; position: fixed; z-index: 9999; left: 0; top: 0; width: 100%; height: 100%; overflow: auto; background-color: rgba(0,0,0,0.6);">
-      <div style="background-color: #fff; margin: 5% auto; padding: 20px; border-radius: 10px; width: 60%; max-height: 80%; overflow-y: auto; position: relative;">
-        <span onclick="hideTerms()" style="position: absolute; top: 10px; right: 20px; font-size: 28px; font-weight: bold; cursor: pointer;">&times;</span>
-        <h2 style="color: rgb(24, 24, 77);">Terms of Service</h2>
-        <p style="line-height: 1.6; font-size: 16px;">1. All residents must return to the hostel premises by 9:00 PM unless prior permission has been granted.<br><br>2. Visitors are allowed only during designated hours; male visitors are restricted to common visitor areas and cannot enter resident rooms.<br><br>3. Unauthorized visitors or overnight guests are strictly prohibited.<br><br>4. Rent must be paid on time; late fees apply after the due date.<br><br>5. Any form of fight, argument, bullying, or physical/verbal abuse will result in strict disciplinary action, including possible suspension or expulsion.<br><br>6. Unauthorized electrical appliances are not permitted in rooms to ensure safety and avoid electrical hazards.<br><br>7. Hostel authorities reserve the right to conduct surprise room inspections for safety and maintenance purposes.<br><br>8. Outstation or overnight leave must be pre-approved by hostel authorities with guardian consent if required.<br><br>9. Theft, damage to property, or tampering with hostel infrastructure will result in penalties or legal consequences.<br><br>10. All residents must treat staff and fellow hostel mates with respect and refrain from inappropriate or disrespectful behavior.<br><br>By staying with us, you agree to abide by all the rules above for a safe and comfortable experience.</p>
-      </div>
-    </div>
+    <h2>Contact Information</h2>
+    <p><strong>Email Address:</strong><br> xyz@gmail.com</p>
+    <p><strong>Phone Number:</strong><br> +91 9470017607</p>
+  
+  <button onclick="hideContact()" style="margin-top: 15px; padding: 8px 20px; border: none;
+      background-color: rgb(255, 0, 0); color: white; border-radius: 5px; cursor: pointer;">
+      Close
+  </button>
+  
+</div>
+</div>
 
-    <div id="contactModal" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.5); z-index: 999;">
-      <div style="background-color: rgb(255, 255, 255); width: 300px; margin: 100px auto; padding: 20px; border-radius: 8px; text-align: center; position: relative;">
-        <h2>Contact Information</h2>
-        <p><strong>Email Address:</strong><br> xyz@gmail.com</p>
-        <p><strong>Phone Number:</strong><br> +91 9470017607</p>
-        <button onclick="hideContact()" style="margin-top: 15px; padding: 8px 20px; border: none; background-color: rgb(255, 0, 0); color: white; border-radius: 5px; cursor: pointer;">Close</button>
-      </div>
-    </div>
+<br>
+<div style="text-align: center; margin-top: 40px; background-color: black; color: #dad4d4;">
+  git@adityavermastack
+</div>
+</footer>
 
-    <br>
-    <div style="text-align: center; margin-top: 40px; background-color: black; color: #dad4d4;">
-      git@adityavermastack
-    </div>
-  </footer>
+<br>
 
-  <script>
-    function showContact() {
-      document.getElementById('contactModal').style.display = 'block';
-    }
+<!-- JavaScript for Modal -->
+<script>
+function showContact() {
+  document.getElementById('contactModal').style.display ='block';
+}
 
-    function hideContact() {
-      document.getElementById('contactModal').style.display = 'none';
-    }
+function hideContact() {
+  document.getElementById('contactModal').style.display = 'none';
+}
 
-    function showTerms() {
-      document.getElementById('termsModal').style.display = 'block';
-    }
+function showTerms() {
+    document.getElementById('termsModal').style.display = 'block';
+  }
 
-    function hideTerms() {
-      document.getElementById('termsModal').style.display = 'none';
-    }
+  function hideTerms() {
+    document.getElementById('termsModal').style.display = 'none';
+  }
 
-    function toggleFacilities() {
-      const section = document.getElementById('facilities-section');
-      if (section.style.display === 'none' || section.style.display === '') {
-        section.style.display = 'block';
-        section.scrollIntoView({ behavior: 'smooth' });
-      } else {
-        section.style.display = 'none';
-      }
-    }
-  </script>
-</body>
-</html>
+  function toggleFacilities() {
+  const section = document.getElementById('facilities-section');
+  if (section.style.display === 'none' || section.style.display === '') {
+    section.style.display = 'block';
+    section.scrollIntoView({ behavior: 'smooth' });
+  } else {
+    section.style.display = 'none';
+  }
+}
+
+</script>
