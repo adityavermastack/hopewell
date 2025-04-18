@@ -1,0 +1,65 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Enquire</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f0f2f5;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    form {
+      background: rgb(255, 255, 255);
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      width: 350px;
+    }
+    h2 {
+      text-align: center;
+      color: #000000;
+    }
+    input, textarea {
+      width: 100%;
+      margin: 10px 0;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+    button {
+      background: #1f3a93;
+      color: white;
+      padding: 10px;
+      border: none;
+      border-radius: 6px;
+      width: 100%;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #000000;
+    }
+  </style>
+</head>
+<body>
+  <form action="https://formsubmit.co/aadittyaverma15@gmail.com" method="POST">
+    <h2>Enquire</h2>
+    <input type="text" name="Name" placeholder="Your Name" required>
+    <input type="tel" name="Phone" placeholder="Your Phone Number" required>
+    <input type="Message" aria-rowspan="4" placeholder="Your query?" required></textarea>
+
+    <!-- Anti-spam protection -->
+    <input type="hidden" name="_captcha" value="false">
+
+    <!-- Optional success page -->
+    <input type="hidden" name="_next" value="thankyou.html">
+
+    <button type="submit">Submit</button>
+
+    <a href="index.html" class="back-btn">⬅ Go Back</a>
+
+  </form>
+</body>
+</html>
